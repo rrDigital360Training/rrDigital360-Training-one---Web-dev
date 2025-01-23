@@ -5,3 +5,6 @@ body {
 .image1 {
     width: 50%;
 }
+nav a:hover{
+    color: aqua;
+}
