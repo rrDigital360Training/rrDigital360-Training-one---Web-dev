@@ -4,27 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rr Digitals 360</title>
-    <link rel="stylesheet" href="styles/style.css">
-   
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-        <h1>This is my first webpage</h1>
+    <div class="body-container">
+      <header>
+        <h1>Digital Marketing Company</h1>
         <nav>
-            <a href="">Home</a>
-            <a href="pages/blog.html" target="_blank">Blog</a>
-            <a href="pages/Shop.html" target="_blank">Shop</a>
-            <a href="pages/locations.html" target="_blank">Locations</a>
-            <a href="pages/Services.html" target="_blank">Services</a>
-            <a href="pages/cotact-us.html" target="_blank">Contact Us</a>
+          <a href="">Home</a>
+          <a href="pages/blog.html" target="_blank">Blog</a>
+          <a href="pages/Shop.html" target="_blank">Shop</a>
+          <a href="pages/locations.html" target="_blank">Locations</a>
+          <a href="pages/Services.html" target="_blank">Services</a>
+          <a href="pages/cotact-us.html" target="_blank">Contact Us</a>
         </nav>
-    </header>
-    <div id="container1">
-       
+        <hr />
+      </header>
+      <div id="container1">
         <h2>This is Balu</h2>
-        <img class="image1" src="assets/images/2.jpg" alt="Balu Image">
-        <p>Ravi Teja Soupati
-            Balu</p>
+        <button id="hide-image" onclick="myFunction()">click me to hide image </button>
+        <img id="baluimage" class="image1" src="assets/images/2.jpg" alt="Balu Image" />
+        <script>
+          function myFunction() {
+         
+              var image = document.getElementById("baluimage")
+              if (image.style.display === "none") {
+                  image.style.display = "block";
+               }
+             else {
+                  image.style.display = "none";
+                  this.textContent = "Show Image";
+            };}
+      </script>
+        <p style="color: grey; font-size: 14px">
+          Nestled in a lush valley, the village exudes a quiet charm that feels
+          like a step back in time.<br />
+          Cobblestone streets wind through clusters of quaint cottages, their
+          thatched roofs dusted with a light mist that rises with the morning
+          sun. Vibrant flowers bloom in every window box, their colors adding a
+          splash of life against the rustic stone walls. The scent of fresh
+          bread wafts from the bakery at the village square, where locals gather
+          for morning gossip and to pick up their daily provisions.
+        </p>
+      </div>
+      
+      <footer>
+        <hr>
+      <h3>Contact Number: 9390560273</h3>
+      </footer>
     </div>
   </body>
 </html>
